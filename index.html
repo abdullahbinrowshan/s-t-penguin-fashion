@@ -9,13 +9,25 @@
     <title>Penguin Fashion</title>
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                penguin: '#FFFBF0'
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
-    <header>
-        <section class="container mx-auto">
-            <div class="space-y-4">
-                <h1 class="text-5xl font-bold uppercase">
+    <header class="bg-penguin pb-32 pt-12">
+        <section class="container mx-auto sm:flex items-center justify-around">
+            <div class="space-y-4 ml-2 sm:ml-0">
+                <h1 class="text-3xl sm:text-5xl font-bold uppercase">
                     <span class="text-yellow-300">Be the Penguin</span>
                     <br>
                     <span>Of Winter</span>
@@ -30,11 +42,14 @@
                     Buy now
                 </button>
             </div>
-            <div>
-                <img src="images/model.png" alt="">
+            <div class=" mt-3 sm:mt-0">
+                <img class="w-4/5 mx-auto sm:w-full" src="images/model.png" alt="">
             </div>
         </section>
     </header>
+    <main>
+
+    </main>
 </body>
 
 </html>
